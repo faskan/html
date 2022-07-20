@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <style>
+    .menu ul li:first-child.active a {
+        background-position-y: -81px;
+        background-color: #23282d;
+    }
+
+    .menu ul li:nth-child(2).active a {
+        background-position-y: -262px;
+        border: 0 !important;
+        background-color: #ec5d21;
+    }
+    .menu ul li:nth-child(3).active a {
+        background-position-y: -442px;
+        background-color: #ff2c21;
+    }
+    .menu ul li:nth-child(4).active a {
+        background-position-y: -623px;
+        background-color: #474a8a;
+    }
+    .menu ul li:nth-child(2) a {
+        background-position-y: -173px;
+    }
+    .menu ul li:nth-child(3) a {
+        background-position-y: -354px;
+    }
+    .menu ul li:nth-child(4) a {
+        background-position-y: -535px;
+    }
+    .menu-item {
+      box-sizing: border-box;
+      width: 65px;
+      height: 65px;
+      font-size: 0;
+      border-radius: 50px !important;
+      background-color: #23282d;
+      background:  url("https://www.cloudways.com/wp-content/themes/cw_multilingual/template/assets/img/home/home-new-cms-ftr-sprite.png") no-repeat center;
+      padding: 0;
+      transition: all .5s
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Dynamic Tabs</h2>
+  <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+
+  
+  
+  <div class="row">
+  	<div class="col-md-9">
+    	<div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <h3>HOME</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+          </div>
+          <div id="menu3" class="tab-pane fade">
+            <h3>Menu 3</h3>
+            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-3 menu">
+      <ul class="nav nav-stacked">
+        <li class="active"><a data-toggle="tab" href="#home" class="menu-item">Home</a></li>
+        <li><a data-toggle="tab" href="#menu1" class="menu-item">Menu 1</a></li>
+        <li><a data-toggle="tab" href="#menu2" class="menu-item">Menu 2</a></li>
+        <li><a data-toggle="tab" href="#menu3" class="menu-item">Menu 3</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
