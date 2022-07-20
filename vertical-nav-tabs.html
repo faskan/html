@@ -11,7 +11,6 @@
         background-position-y: -81px;
         background-color: #23282d;
     }
-
     .menu ul li:nth-child(2).active a {
         background-position-y: -262px;
         border: 0 !important;
@@ -25,6 +24,10 @@
         background-position-y: -623px;
         background-color: #474a8a;
     }
+
+    .menu ul li:first-child a {
+        background-position-y: 6px;
+    }
     .menu ul li:nth-child(2) a {
         background-position-y: -173px;
     }
@@ -34,17 +37,19 @@
     .menu ul li:nth-child(4) a {
         background-position-y: -535px;
     }
-    .menu-item {
-      box-sizing: border-box;
-      width: 65px;
-      height: 65px;
-      font-size: 0;
-      border-radius: 50px !important;
-      background-color: #23282d;
-      background:  url("https://www.cloudways.com/wp-content/themes/cw_multilingual/template/assets/img/home/home-new-cms-ftr-sprite.png") no-repeat center;
-      padding: 0;
-      transition: all .5s
+
+    .menu ul li a {
+        box-sizing: border-box;
+        width: 65px;
+        height: 65px;
+        font-size: 0;
+        border-radius: 50px !important;
+        background-color: #23282d;
+        background:  url("https://www.cloudways.com/wp-content/themes/cw_multilingual/template/assets/img/home/home-new-cms-ftr-sprite.png") no-repeat center;
+        padding: 0;
+        transition: all .5s ease-in-out;
     }
+
   </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
